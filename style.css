@@ -323,7 +323,7 @@ section .title::after {
   width: calc(75% - 10px);
 }
 .bar.basic::before{
-  width: calc(70% - 10px);
+  width: calc(66% - 10px);
 }
 .bar.intermediate::before{
   width: calc(75% - 10px);
