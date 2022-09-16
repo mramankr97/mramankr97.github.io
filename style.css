@@ -265,197 +265,73 @@ section .title::after {
 
 
 
-.container {
-	max-width: 960px;
-	width: 100%;
-	margin: auto;
-  
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
 }
 
-/* .skillset {
-	margin-top: 50px;
-  border: 1px solid black;
-} */
-
-.skill-lockup {
-	max-width: 450px;
-	width: 100%;
-	float: left;
-	margin-right: 40px;
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
 }
 
-.mr {
-	margin-right: 0;
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
 }
 
-.mb {
-	margin-bottom: 5px;
+.bar.learning::before{
+  width: calc(73% - 10px);
+}
+.bar.basic::before{
+  width: calc(60% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(75% - 10px);
+}
+.bar.advanced::before{
+  width: calc(65% - 10px);
 }
 
-.skill-info {
-	display: block;
-	margin-bottom: 20px;
-}
-
-.skill-name {
-	float: left;
-	color: #666;
-}
-
-.skill-status {
-	float: right;
-	color: #c4c4c4;
-	font-size: .8em;
-}
-.skill-bar {
-	display: block;
-	max-width: 450px;
-	width: 100%;
-	height: 5px;
-	background: #e3e3e5;
-	clear: both;
-	margin: 20px 0;
-}
-
-.skill-level {
-	display: table;
-	height: 5px;
-}
-.com, .fd,.bd, .dsa,.teamwork{
-	background: #c6a60e;
-}
-
-.com {
-	width: 40%;
-	-webkit-animation: communication 10s linear;
-	animation: communication 10s linear;
-}
-
-.fd {
-	width: 15%;
-	-webkit-animation: planning 10s linear;
-	animation: planning 10s linear;
-}
-
-.bd {
-	width: 45%;
-	-webkit-animation: learning 10s linear;
-	animation: learning 10s linear;
-}
-
-.dsa {
-	width: 30%;
-	-webkit-animation: programming 10s linear;
-	animation: programming 10s linear;
-}
-
-.teamwork {
-	width: 20%;
-	-webkit-animation: visual-design 10s linear;
-	animation: visual-design 10s linear;
-}
-
-
-/*-----------------------
-	  	Animations 
--------------------------*/ 
-@-webkit-keyframes com {
-	from { width: 0%; }
-	to { width: 70%; }
-}
-
-@keyframes com {
-	from { width: 0%; }
-	to { width: 70%; }
-}
-
-/*-----------------------
-	Planning Animation 
--------------------------*/
-@-webkit-keyframes fd {
-	from { width: 0%; }
-	to { width: 70%; }
-}
-
-@keyframes fd {
-	from { width: 0%; }
-	to { width: 70%; }
-}
-
-/*-----------------------
-	Learning Animation 
--------------------------*/ 
-@-webkit-keyframes bd {
-	from { width: 0%; }
-	to { width: 75%; }
-}
-
-@keyframes bd {
-	from { width: 0%; }
-	to { width: 75%; }
-}
-
-/*-----------------------
-  Programming Animation 
--------------------------*/ 
-@-webkit-keyframes programming {
-	from { width: 0%; }
-	to { width: 30%; }
-}
-
-@keyframes programming {
-	from { width: 0%; }
-	to { width: 30%; }
-}
-
-/*-----------------------
-Visual-Design Animation  
--------------------------*/ 
-@-webkit-keyframes dsa {
-	from { width: 0%; }
-	to { width: 73%; }
-}
-
-@keyframes dsa {
-	from { width: 0%; }
-	to { width: 73%; }
-}
-
-/*-----------------------
-   UX-Design Animation  
--------------------------*/ 
-@-webkit-keyframes teamwork {
-	from { width: 0%; }
-	to { width: 85%; }
-}
-
-@keyframes teamwork {
-	from { width: 0%; }
-	to { width: 85%; }
-}
-
-
-/*-----------------------
-	  Media queries
--------------------------*/ 
-
-
-@media screen and (max-width: 955px) {
-	.skillset {
-		padding: 20px;
-	}
-	.skill-lockup {
-		max-width: 700px;
-		width: 100%;
-		float: none;
-		margin: 0 auto;
-	}
-
-	.skill-bar {
-		max-width: 700px;
-		width: 100%;
-	}
-}
 
 
 
