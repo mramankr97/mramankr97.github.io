@@ -200,8 +200,28 @@
 
 
 <section id="git">
-    <img src="./images/git1.PNG" alt="GitStat">
-    <img src="./images/git calendar.PNG" alt="gitCalen">
+  
+    <h2 class="section-title" style="text-align:center"> GitHub Calendar & Statistics</h2>
+    <br>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  
+  <div style="width:70%;margin:auto;" class="calendar">
+  
+  
+  </div>
+  <script>
+    GitHubCalendar(".calendar", "mramankr97");
+    GitHubCalendar(".calendar", "mramankr97", { responsive: true });
+  </script>
+
+<br>
+
+    <div style="display: flex; align-items: center;text-align: center;margin: auto;width: 70%;gap: 10px;">
+      <img width="50%" src="https://github-readme-stats.vercel.app/api?username=mramankr97&show_icons=true&theme=default" />
+      <img width="50%" src="https://github-readme-streak-stats.herokuapp.com/?user=mramankr97&theme=default" />
+    </div>
 
 </section>
 

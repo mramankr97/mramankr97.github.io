@@ -439,17 +439,17 @@ section .title::after {
   content: "see my work";
 }
 .project .carousel .card {
-  background: #222;
+  background: rgb(234, 228, 228);
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.project .carousel .card:hover {
+/* .project .carousel .card:hover {
   background: crimson;
   color: #f1f1f1;
-}
+} */
 .project .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -478,7 +478,7 @@ section .title::after {
 .repo-div {
   display: flex;
   width: 35%;
-  border: 1px solid white;
+  border: 1px solid rgb(15, 14, 14);
   justify-content: center;
   align-items: center;
 }
@@ -486,7 +486,7 @@ section .title::after {
 .demo-div {
   display: flex;
   width: 35%;
-  border: 1px solid white;
+  border: 1px solid rgb(22, 21, 21);
   justify-content: center;
   align-items: center;
 }
@@ -500,7 +500,7 @@ section .title::after {
 .demo-div a:link,
 .techStack {
   text-decoration: none;
-  color: white;
+  color: rgb(13, 12, 12);
 }
 
 .project .carousel .card img {
@@ -513,7 +513,7 @@ section .title::after {
 }
 .project .carousel .card:hover img {
   border-color: #fff;
-  color: white;
+  color: rgb(8, 7, 7);
 }
 .owl-dots {
   text-align: center;
