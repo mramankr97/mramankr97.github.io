@@ -505,7 +505,7 @@ section .title::after {
 
 .project .carousel .card img {
   height: 250px;
-  width: 250px;
+  width: 350px;
   object-fit: cover;
   border-radius: 5%;
   border: 5px solid crimson;
@@ -529,7 +529,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .owl-dot.active {
-  width: 35px;
+  width: 55px;
   border-radius: 14px;
 }
 .owl-dot.active,
@@ -541,6 +541,11 @@ section .title::after {
   height: 120px;
 }
 
+
+#bagelly{
+  width: 350px;
+
+}
 /*============================================ contact section styling ====================================================================*/
 .contact .title::after {
   content: "get in touch";
